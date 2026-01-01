@@ -1020,4 +1020,12 @@ strong {
     font-size: 20px;
   }
 }
+@media (max-width: 600px) {
+    .hide-on-small {
+        display: none !important; /* Hides the element on screens 600px or less */
+    }
+    .show-on-small {
+        display: block !important; /* Hides the element on screens 600px or less */
+    }
+}
 

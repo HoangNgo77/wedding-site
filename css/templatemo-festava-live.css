@@ -5,7 +5,10 @@ TemplateMo 583 Festava Live
 https://templatemo.com/tm-583-festava-live
 
 */
-
+@font-face{
+  font-family: "bosch";
+  src: url(fonts/bosch.tff);
+}
 
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
@@ -13,17 +16,17 @@ https://templatemo.com/tm-583-festava-live
 :root {
   --white-color:                  #ffffff;
   --primary-color:                #e2e2e2;
-  --secondary-color:              #EE5007;
+  --secondary-color:              #ffdb06e3;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #EE5007;
+  --custom-btn-bg-color:          #ffbe07ad;
   --custom-btn-bg-hover-color:    #c01f27;
-  --dark-color:                   #000000;
+  --dark-color:                   #000000b8;
   --p-color:                      #717275;
   --border-color:                 #7fffd4;
   --link-hover-color:             #B22727;
 
   --body-font-family:             'Outfit', sans-serif;
-
+  --body-font-family1:            'bosch';
   --h1-font-size:                 74px;
   --h2-font-size:                 46px;
   --h3-font-size:                 32px;
@@ -344,7 +347,9 @@ strong {
   height: 100%;
 }
 
-
+.text-slide-top {
+  font-family: "bosch";
+}
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
@@ -829,8 +834,9 @@ strong {
 }
 
 .site-footer-top {
-  background-color: var(--secondary-color);
-  background-image: url('../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg');
+  /* background-color: var(--secondary-color); */
+  background-color: #e7b012;
+  background-image: url('../images/nainoa-shizuru-NcdG9mK3PBYsplash.jpg');
   background-repeat: no-repeat;
   margin-bottom: 70px;
   padding-top: 30px;
@@ -881,7 +887,7 @@ strong {
 }
 
 .social-icon-link {
-  background: var(--secondary-color);
+  /* background: var(--secondary-color); */
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);

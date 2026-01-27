@@ -1,0 +1,104 @@
+.breadcumb-menu {
+  max-width: 100%;
+  padding: 0;
+  margin: 22px 0 -0.5em 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.breadcumb-menu li {
+  display: inline-block;
+  margin-right: 3px;
+  padding-right: 3px;
+  list-style: none;
+  position: relative;
+}
+
+.breadcumb-menu li::after {
+  content: "\f054";
+  position: relative;
+  margin-left: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: var(--icon-font);
+  color: var(--theme-color);
+}
+
+.breadcumb-menu li:last-child {
+  padding-right: 0;
+  margin-right: 0;
+  color: var(--theme-color);
+}
+
+.breadcumb-menu li:last-child::after {
+  display: none;
+}
+
+.breadcumb-menu li:first-child,
+.breadcumb-menu li:first-child a,
+.breadcumb-menu li:first-child span {
+  color: var(--white-color);
+}
+
+.breadcumb-menu li:first-child:hover,
+.breadcumb-menu li:first-child a:hover,
+.breadcumb-menu li:first-child span:hover {
+  color: var(--theme-color);
+}
+
+.breadcumb-menu li,
+.breadcumb-menu a,
+.breadcumb-menu span {
+  white-space: normal;
+  color: var(--theme-color);
+  word-break: break-word;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.breadcumb-content {
+  text-align: center;
+}
+.breadcumb-wrapper {
+    background-image: url('../images/breadcrumb/breadcrumb-bg.jpeg');
+    background-size: cover;        /* Scale to cover screen */
+    background-repeat: no-repeat; 
+     background-position: center;
+}
+.breadcumb-wrapper.style-2 {
+  padding: 105px 0 210px;
+}
+
+.breadcumb-title {
+  margin: -0.20em 0 -0.18em 0;
+  line-height: 1.1;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+@media (min-width: 1300px) {
+  .breadcumb-title {
+    font-size: 40px;
+    line-height: 1.11;
+  }
+}
+
+.breadcumb-wrapper {
+  --space: 165px;
+  padding: calc(var(--space)) 0 var(--space);
+  text-align: start;
+  position: relative;
+  z-index: 2;
+}
+
+.breadcumb-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: linear-gradient(246deg, #000000 0%, #03060E 100%);
+  opacity: 0.7;
+  z-index: -1;
+}
